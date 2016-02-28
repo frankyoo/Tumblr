@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="502"/>
+            <point key="canvasLocation" x="445" y="397"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="5VC-7j-uji">
@@ -154,11 +154,20 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="loading-1" id="0sX-Xy-mKz">
+                                <rect key="frame" x="130" y="252" width="61" height="19"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.27450980392156865" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="loadingImageView" destination="0sX-Xy-mKz" id="dv6-B3-anU"/>
+                        <outlet property="searchFeedImageView" destination="nLh-oF-4G2" id="xVj-Co-Pot"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgE-Jc-n4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,12 +217,6 @@
                                 <animations/>
                                 <state key="normal" image="text_icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nd5-e0-pOI">
-                                <rect key="frame" x="123" y="111" width="75" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" image="photo_icon"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gkJ-Fp-bjY">
                                 <rect key="frame" x="214" y="111" width="75" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -246,6 +249,12 @@
                                 <connections>
                                     <action selector="didPressNevermind:" destination="xWj-QQ-WbJ" eventType="touchUpInside" id="VHH-SP-3NW"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nd5-e0-pOI">
+                                <rect key="frame" x="123" y="112" width="75" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" image="photo_icon"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -345,6 +354,7 @@
         <image name="home_selected_icon" width="35" height="35"/>
         <image name="home_spinner" width="146" height="146"/>
         <image name="link_icon" width="75" height="95"/>
+        <image name="loading-1" width="61" height="19"/>
         <image name="login_form" width="300" height="132"/>
         <image name="nevermind" width="320" height="53"/>
         <image name="photo_icon" width="75" height="95"/>

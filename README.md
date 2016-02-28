@@ -61,8 +61,8 @@ Bobbing Discover Bubble
 
 Loading
  * [x] Optional: Show the custom loading indicator by playing the sequence of pngs.
- * [-] Add a viewWillAppear method to the searchViewController. Within the viewWillAppear method, hide the background image feed and show the custom loading indicator.
- * [-] Add a viewDidAppear method to the searchViewController. Within the viewDidAppear method, add a delay method. In the completion block of the delay, hide the custom loading indicator and show the background image feed.
+ * [x] Add a viewWillAppear method to the searchViewController. Within the viewWillAppear method, hide the background image feed and show the custom loading indicator.
+ * [x] Add a viewDidAppear method to the searchViewController. Within the viewDidAppear method, add a delay method. In the completion block of the delay, hide the custom loading indicator and show the background image feed.
 
 Notes:
 Got a bit stuck on my modal backgrounds not being transparent on fade. There seems to be an opaque black layer behind the modal that covers the parent screen beneath it. Couldn't figure out how to fix this.
