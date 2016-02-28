@@ -2,7 +2,7 @@
 
 This is an iOS demo application for the tab view controller animations and embedded view controllers for the Tumblr app.
 
-Time spent: 9 hours
+Time spent: 11 hours
 
 Completed user stories:
 
