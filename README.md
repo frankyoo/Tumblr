@@ -2,7 +2,7 @@
 
 This is an iOS demo application for the tab view controller animations and embedded view controllers for the Tumblr app.
 
-Time spent: 11 hours
+Time spent: 13 hours
 
 Completed user stories:
 
@@ -65,7 +65,7 @@ Loading
  * [x] Add a viewDidAppear method to the searchViewController. Within the viewDidAppear method, add a delay method. In the completion block of the delay, hide the custom loading indicator and show the background image feed.
 
 Notes:
-Got a bit stuck on my modal backgrounds not being transparent on fade. There seems to be an opaque black layer behind the modal that covers the parent screen beneath it. Couldn't figure out how to fix this.
+[UPDATE] Emma gave me a tip to embed a subview in the root view to fix issues with background alpha and it worked!! >>> Got a bit stuck on my modal backgrounds not being transparent on fade. There seems to be an opaque black layer behind the modal that covers the parent screen beneath it. Couldn't figure out how to fix this.
 
 Walkthrough of all user stories:
 

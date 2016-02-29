@@ -19,7 +19,6 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
